@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    transition: 3s;
+}
+
 header {
     background-color: #30302E;
     padding: 10px;
@@ -47,59 +52,108 @@ ul {
     transition: all 0.5s;
     border-radius: 10px;
 }
+
 main {
     background-color: #85857F;
     border-top: solid #A27045 10px;
 }
-.img{
+
+.slide {
+    position: relative;
+}
+
+.img {
     width: 100%;
     height: 500px;
     background-image: url(../img/slide.png);
     background-size: cover;
     background-position: center;
+    filter: brightness(70%);
 }
-.img1{
+
+.img1 {
     width: 100%;
     height: 500px;
     background-image: url(../img/slide2.png);
     background-size: cover;
     background-position: center;
+    filter: brightness(70%);
 }
-.img2{
+
+.img2 {
     width: 100%;
     height: 500px;
     background-image: url(../img/slide3.png);
     background-size: cover;
     background-position: center;
+    filter: brightness(70%);
 }
-.img3{
+
+.img3 {
     width: 100%;
     height: 500px;
     background-image: url(../img/slide4.png);
     background-size: cover;
     background-position: center;
+    filter: brightness(70%);
 }
+
 section {
     padding: 50px 30px 20px 60px;
     margin-left: 40px;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ad7544;
+    font-family: "edo";
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 h2 {
     text-decoration: underline;
     font-family: "edo";
-    display: flex;
-    justify-content: center;
+    color: #ad7544;
+    font-weight: bold;
 }
-.title{
+
+.ver {
+    color: #ad7544;
+    border-top: groove #30302E 3px;
+}
+
+.ver:hover {
+    color: #000;
+}
+
+
+.pageContacto {
+    color: #72543a;
+    font-family: "edo";
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    padding: 30px;
 }
-.form {
-    color: #A27045;
-    font-family: "edo";
+
+h3 {
+    text-decoration: underline;
+    color: #30302E;
+    font-weight: bold;
+    text-align: center;
 }
+
+
 
 .local {
     width: 300px;
@@ -145,4 +199,3 @@ footer i:hover {
 .redSocial {
     color: #A27045;
 }
-
