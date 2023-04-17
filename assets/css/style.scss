@@ -133,6 +133,7 @@ h2 {
     flex-wrap: wrap row;
     text-align: center;
     padding: 30px;
+
     h3 {
         text-decoration: underline;
         color: #30302E;
@@ -141,18 +142,21 @@ h2 {
         font-family: "edo";
         padding: 20px;
     }
+
     p {
         color: #72543a;
         font-family: "edo";
         text-align: center;
     }
-    button{
+
+    button {
         color: #30302E;
         font-family: "edo";
         text-align: center;
         background-color: #72543a;
         border-radius: 10px;
     }
+
     video {
         width: 60vh;
         height: 40vh;
@@ -180,7 +184,8 @@ h2 {
     }
 
 }
-.pageNosotros{
+
+.pageNosotros {
     color: #72543a;
     font-family: "edo";
     width: 100%;
@@ -191,7 +196,8 @@ h2 {
     padding: 30px;
 
 }
-.pageProduct{
+
+.pageProduct {
     color: #72543a;
     font-family: "edo";
     width: 100%;
@@ -287,9 +293,16 @@ footer i:hover {
 .redSocial {
     color: #A27045;
 }
-@media (max-width: 650px){
-    .pageInicio{
+
+@media (max-width: 650px) {
+    .pageInicio {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        video {
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+        }
     }
 }
