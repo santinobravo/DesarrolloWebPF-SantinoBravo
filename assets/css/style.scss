@@ -188,24 +188,67 @@ h2 {
 .pageNosotros {
     color: #72543a;
     font-family: "edo";
-    width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    padding: 20px;
+    display: inline-block;
 
+    h2 {
+        text-decoration: underline;
+        color: #30302E;
+        font-weight: bold;
+        text-align: center;
+        font-family: "edo";
+        padding: 20px;
+    }
+
+    .story {
+        width: 50vh;
+        height: 40vh;
+        padding: 10px;
+        float: left;
+    }
+
+    .text {
+        text-align: center;
+    }
 }
 
 .pageProduct {
     color: #72543a;
     font-family: "edo";
-    width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    padding: 20px;
+    text-align: center;
+
+    h2 {
+        text-decoration: underline;
+        color: #30302E;
+        font-weight: bold;
+        text-align: center;
+        font-family: "edo";
+        padding: 20px;
+    }
+
+    .ContenedorImg {
+        display: flex;
+        display: inline-block;
+    }
+
+    .producto {
+        width: 20vh;
+        height: 20vh;
+    }
+
+    h4 {
+        text-decoration: underline;
+    }
+
 }
 
 .pageLocal {
@@ -215,7 +258,7 @@ h2 {
     justify-content: center;
     flex-flow: row wrap;
     align-items: flex-start;
-    padding: 10px 30px;
+    padding: 20px;
 
 
     h5 {
@@ -223,9 +266,9 @@ h2 {
     }
 
     .local {
-        width: 55vh;
+        width: 60vh;
         height: 50vh;
-        padding: 30px;
+        padding: 20px;
     }
 
 }
@@ -250,21 +293,6 @@ h2 {
     }
 }
 
-
-
-.story {
-    width: 350px;
-    height: 280px;
-}
-
-h4 {
-    color: #A27045;
-}
-
-.product {
-    width: 150px;
-    height: 130px;
-}
 
 footer {
     width: 100%;
@@ -299,10 +327,30 @@ footer i:hover {
         display: flex;
         flex-direction: column;
         text-align: center;
+
         video {
             width: 250px;
             height: 250px;
             padding: 10px;
+        }
+    }
+
+    .pageNosotros {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .story {
+            float: none;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .pageLocal {
+        .local {
+            width: 50vh;
+            height: 40vh;
         }
     }
 }
