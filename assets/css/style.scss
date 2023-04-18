@@ -221,8 +221,8 @@ h2 {
     font-family: "edo";
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     text-align: center;
 
@@ -235,9 +235,33 @@ h2 {
         padding: 20px;
     }
 
-    .ContenedorImg {
-        display: flex;
-        display: inline-block;
+    .contenedorImg {
+        display: grid;
+        grid-area:
+            "variedad1 variedad2"
+            "variedad3 variedad4";
+        grid-template-columns: 5fr 5fr;
+        grid-template-rows: 5fr 5fr;
+    }
+
+    .variedad1 {
+        grid-area: "variedad1";
+        padding: 20px;
+    }
+
+    .variedad2 {
+        grid-area: "variedad2";
+        padding: 20px;
+    }
+
+    .variedad3 {
+        grid-area: "variedad3";
+        padding: 20px;
+    }
+
+    .variedad4 {
+        grid-area: "variedad4";
+        padding: 20px;
     }
 
     .producto {
